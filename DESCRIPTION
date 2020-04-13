@@ -2,11 +2,22 @@ Package: aida
 Type: Package
 Title: R package with helper functions for courses on _A_dvanced topics in and _I_ntro to _D_ata _A_nalysis
 Version: 0.1.0
-Author: person("Tobias", "Anton",
+Author: person(given = "Tobias", 
+               family = "Anton",
                email = "tobias.anton.85@gmail.com")
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: This package contains data and helper functions used in the "Bayesian Data Analysis - Advanced Topics" course at University of Osnabrück.
 License: CC BY-NC 4.0
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    rstan,
+    brms,
+    nimble,
+    bayesplot,
+    ggmcmc,
+    coda,
+    parallel,
+    HDInterval,
+    tidyverse
 RoxygenNote: 7.1.0
