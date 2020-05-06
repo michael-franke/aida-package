@@ -19,7 +19,7 @@ theme_aida <- function(title.size = 16, text.size = 14,
                                                 face = "bold"),
                            line = element_line(size = .5))
   
-  # axes
+  # axss
   if (inherits(show.axis, "character") | show.axis == FALSE){
     if (inherits(show.axis, "character")){
       show.axis <- tolower(show.axis)
@@ -34,6 +34,9 @@ theme_aida <- function(title.size = 16, text.size = 14,
                                axis.line.y = element_blank())
     }
   }
+  
+  # axis titles
+  layout <- layout + theme(axis.title.x = element_text(margin = margin(t = 8)))
   
   # legend
   layout <- layout + theme(legend.position = legend.position,
