@@ -8,3 +8,11 @@ Run:
 ```
 devtools::install_github("michael-franke/aida-package")
 ```
+
+### changelog
+
+- 07.05.:  
+    - **NEW** `theme_aidark()` - a dark version of `theme_aida()`  
+    - added grid lines by default to `theme_aida()`; turn off via `show.grid = FALSE`  
+    - clarified tooltips  
+- 06.05.: added spacing to x-axis and axis title in `theme_aida()`  

@@ -3,15 +3,15 @@
 #' @param title.size title element size in pts
 #' @param text.size text element size in pts
 #' @param legend.position either one of "none", "left", "right", "bottom", "top"
-#' @param show.axis boolean
+#' @param show.axis boolean or "x", "y"; should axis be drawn? Which?
+#' @param show.grid boolean; should grid lines be drawn?
 #' @param plot.margin margin around entire plot (unit with the sizes of the top, right, bottom, and left margins)
 #' 
 #' @import ggplot2
 #' @export
-
-theme_aida <- function(title.size = 16, text.size = 14,
-                      legend.position = "top", show.axis = FALSE, 
-                      plot.margin = c(.2, .1, .2, .1)){
+theme_aida <- function(title.size = 16, text.size = 14, legend.position = "top", 
+                       show.axis = FALSE, show.grid = TRUE,
+                       plot.margin = c(.2, .1, .2, .1)){
   # baseline
   layout <- theme_classic()
   layout <- layout + theme(text = element_text(size = text.size),
@@ -19,7 +19,7 @@ theme_aida <- function(title.size = 16, text.size = 14,
                                                 face = "bold"),
                            line = element_line(size = .5))
   
-  # axss
+  # axis
   if (inherits(show.axis, "character") | show.axis == FALSE){
     if (inherits(show.axis, "character")){
       show.axis <- tolower(show.axis)
@@ -33,6 +33,13 @@ theme_aida <- function(title.size = 16, text.size = 14,
       layout <- layout + theme(axis.line.x = element_blank(),
                                axis.line.y = element_blank())
     }
+  }
+  
+  # grid lines
+  if (show.grid == TRUE){
+    layout <- layout + theme(panel.grid.major = element_line(size = .2, 
+                                                             color = "#333333", 
+                                                             linetype = "dotted"))
   }
   
   # axis titles
