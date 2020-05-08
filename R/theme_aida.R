@@ -45,6 +45,13 @@ theme_aida <- function(title.size = 16, text.size = 14, legend.position = "top",
   # axis titles
   layout <- layout + theme(axis.title.x = element_text(margin = margin(t = 8)))
   
+  # axis labels
+  layout <- layout + theme(axis.text = element_text(face = "plain"))
+  
+  # subtitle
+  layout <- layout + theme(plot.subtitle = element_text(face = "plain", 
+                                                        color = "#4d4d4d"))
+  
   # legend
   layout <- layout + theme(legend.position = legend.position,
                            legend.background = element_blank(),
