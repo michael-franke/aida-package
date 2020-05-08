@@ -17,7 +17,7 @@ theme_aidark <- function(title.size = 16, text.size = 14, legend.position = "top
                          show.axis = FALSE, show.grid = TRUE,
                          plot.margin = c(.2, .1, .2, .1)){
     # baseline
-    linecolor <- "#333333"
+    linecolor <- "#4d4d4d"
     textcolor <- "#d9d9d9"
     layout <- theme_classic()
     layout <- layout + theme(text = element_text(size = text.size,
@@ -30,19 +30,19 @@ theme_aidark <- function(title.size = 16, text.size = 14, legend.position = "top
     
     # override geom defaults
     new_def <- "#00b0a0"
-    ggplot2::update_geom_defaults("point", list(colour = new_def))
-    ggplot2::update_geom_defaults("line", list(colour = new_def))
-    ggplot2::update_geom_defaults("area", list(colour = new_def, 
-                                               fill   = new_def))
-    ggplot2::update_geom_defaults("rect", list(colour = new_def, 
-                                               fill   = new_def))
-    ggplot2::update_geom_defaults("density", list(colour = new_def, 
-                                                  fill   = new_def))
-    ggplot2::update_geom_defaults("bar", list(colour = new_def, 
-                                              fill   = new_def))
-    ggplot2::update_geom_defaults("col", list(colour = new_def, 
-                                              fill   = new_def))
-    ggplot2::update_geom_defaults("text", list(colour = new_def))
+    update_geom_defaults("point", list(colour = new_def))
+    update_geom_defaults("line", list(colour = new_def))
+    update_geom_defaults("area", list(colour = new_def, 
+                                      fill   = new_def))
+    update_geom_defaults("rect", list(colour = new_def, 
+                                      fill   = new_def))
+    update_geom_defaults("density", list(colour = new_def, 
+                                         fill   = new_def))
+    update_geom_defaults("bar", list(colour = new_def, 
+                                     fill   = new_def))
+    update_geom_defaults("col", list(colour = new_def, 
+                                     fill   = new_def))
+    update_geom_defaults("text", list(colour = new_def))
     
     # axis
     layout <- layout + theme(axis.line = element_line(color = "#d9d9d9"))
