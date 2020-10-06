@@ -1,6 +1,9 @@
-#' Summarize single vector of samples (lower/upper 95% Credible Interval & mean)
+#' Summarize single vector of samples 
+#' 
+#' ...and their lower/upper 95\% Credible Interval & mean
 #' 
 #' @param samples numeric vector of samples
+#' @param name the name of the summarized parameter
 #' 
 #' @return tibble
 #' @export

@@ -1,6 +1,6 @@
 #' Nimble CRS
 #'
-#' convenience function for building and compiling numble models (I guess? Maybe?)
+#' convenience function for building and compiling nimble models 
 #' Note by MF: "Compile and Run"
 #' 
 #' @param model_code either a string containing the code of the model or the variable in which the code is stored
@@ -16,7 +16,7 @@
 #' @return mcmc.list
 #' @export
 
-crs_nimble = function(model_code, constants, data, inits, monitors = c(), nburnin = 0, thin = 1, niter = 100000, nchains = 4) {
+crs_nimble <- function(model_code, constants, data, inits, monitors = c(), nburnin = 0, thin = 1, niter = 100000, nchains = 4) {
     message("building and compiling model ...")
     # create model from input
     model <- suppressMessages(

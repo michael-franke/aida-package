@@ -39,6 +39,6 @@ crs_nimble(
 mcmc.list
 }
 \description{
-convenience function for building and compiling numble models (I guess? Maybe?)
+convenience function for building and compiling nimble models 
 Note by MF: "Compile and Run"
 }

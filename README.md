@@ -11,6 +11,10 @@ devtools::install_github("michael-franke/aida-package")
 
 ### changelog
 
+- `0.3`: 
+    - rename and properly document mousetracking data (more or less)
+    - plug holes in function documentation
+    - minor fixes to code (like syntax and imports)
 - `0.2.1`: 
     - add `summarize_sample_vector()` convenience function
     - tweak plot colors

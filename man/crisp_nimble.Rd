@@ -36,7 +36,7 @@ crisp_nimble(
 
 \item{nchains}{number of chains}
 
-\item{clusters}{number of clusters}
+\item{nclusters}{number of clusters}
 }
 \value{
 mcmc.list

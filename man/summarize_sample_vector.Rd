@@ -2,16 +2,18 @@
 % Please edit documentation in R/summarize_sample_vector.R
 \name{summarize_sample_vector}
 \alias{summarize_sample_vector}
-\title{Summarize single vector of samples (lower/upper 95% Credible Interval & mean)}
+\title{Summarize single vector of samples}
 \usage{
 summarize_sample_vector(samples, name = "")
 }
 \arguments{
 \item{samples}{numeric vector of samples}
+
+\item{name}{the name of the summarized parameter}
 }
 \value{
 tibble
 }
 \description{
-Summarize single vector of samples (lower/upper 95% Credible Interval & mean)
+...and their lower/upper 95\% Credible Interval & mean
 }

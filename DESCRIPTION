@@ -5,12 +5,15 @@ Version: 0.2.1
 Author: person(given = "Tobias", 
                family = "Anton",
                email = "tobias.anton.85@gmail.com")
-Maintainer: The package maintainer <yourself@somewhere.net>
+Maintainer: The package maintainer <tanton@uos.de>
 Description: This package contains data and helper functions used in the "Bayesian Data Analysis - Advanced Topics" course at University of Osnabrück.
 License: CC BY-NC 4.0
 Encoding: UTF-8
 LazyData: true
 Imports: 
+    dplyr,
+    ggplot2,
+    stringr,
     rstan,
     brms,
     nimble,
@@ -20,4 +23,6 @@ Imports:
     parallel,
     HDInterval,
     tidyverse
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
+Depends: 
+    R (>= 2.10)
