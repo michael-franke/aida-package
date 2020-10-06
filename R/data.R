@@ -22,4 +22,5 @@
 #'   \item{prototype_label}{Trajectorial prototype as 
 #'   described by Wulff et al, 2019.}
 #' }
+#' @source usually a \url{}, but I'm unsure in this case
 "mousetrack_typicality"

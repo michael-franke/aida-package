@@ -19,6 +19,9 @@ A data frame with 2052 rows and 16 variables:
   described by Wulff et al, 2019.}
 }
 }
+\source{
+usually a \url{}, but I'm unsure in this case
+}
 \usage{
 mousetrack_typicality
 }
