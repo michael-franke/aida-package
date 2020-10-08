@@ -11,6 +11,8 @@ devtools::install_github("michael-franke/aida-package")
 
 ### changelog
 
+- `0.3.1`: 
+    - add `bootstrapped_CI()` convenience function
 - `0.3`: 
     - rename and properly document mousetracking data (more or less)
     - plug holes in function documentation
