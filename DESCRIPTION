@@ -12,6 +12,7 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     dplyr,
+    purrr,
     ggplot2,
     stringr,
     rstan,
