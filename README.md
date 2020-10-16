@@ -6,7 +6,7 @@ R package with helper functions for courses on _A_dvanced topics in and _I_ntro 
 Run:
 
 ```
-devtools::install_github("michael-franke/aida-package")
+remotes::install_github("michael-franke/aida-package")
 ```
 
 ### changelog
