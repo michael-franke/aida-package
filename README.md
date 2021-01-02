@@ -11,6 +11,8 @@ remotes::install_github("michael-franke/aida-package")
 
 ### changelog
 
+- `0.3.2`:
+    - add more data sets
 - `0.3.1`: 
     - add `bootstrapped_CI()` convenience function
 - `0.3`: 
