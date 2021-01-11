@@ -237,29 +237,28 @@
 
 #' Politeness data
 #'  
-#' @description This data set stems from a tutorial on 
-#' Bayesian regression modeling for factorial designs by 
-#' Franke and Roettger (2019), who preprocessed the data 
-#' from Winter and Grawunder (2012). The data set includes 
-#' voice pitch of male and female speakers in both polite 
-#' and informal linguistic contexts.
+#' @description This data set is a preprocessed and shortened
+#' version of the data provided by Winter and Grawunder (2012). 
+#' The data set includes voice pitch of male and female Korean 
+#' speakers in both polite and informal linguistic contexts.
 #' 
 #' @references 
-#' Franke, M., Roettger, T. B. (2019). 
-#' Bayesian regression modeling (for factorial designs): A tutorial.
-#' 
 #' Winter, B., Grawunder, S. (2012). 
 #' The phonetic profile of Korean formality. 
 #' Journal of Phonetics, 40, 808-815.
 #' 
-#' @format A data frame with 83 rows and 5 variables.
-#' The most important variables in this data set are:
+#' @format A data frame with 83 rows and 5 variables:
 #' \describe{
 #'   \item{subject}{A unique identifier for each participant.}
-#'   \item{gender}{Gender of the participant; male or female.}
-#'   \item{context}{Linguistic context; informal or polite.}
-#'   \item{pitch}{Voice pitch of the speaker.}
+#'   \item{gender}{An indicator of each participants gender 
+#'   (only binary).}
+#'   \item{sentence}{An indicator of the sentence spoken by 
+#'   the participant.}
+#'   \item{context}{The main manipulation of whether the context 
+#'   was a “polite” or “informal” setting.}
+#'   \item{pitch}{The measured voice pitch (presumably: average 
+#'   over the sentence spoken).}
 #' }
 #' 
-#' @source \url{https://raw.githubusercontent.com/michael-franke/bayes_mixed_regression_tutorial/master/code/politeness_data.csv}
+#' @source \url{https://raw.githubusercontent.com/michael-franke/intro-data-analysis/master/data_sets/politeness_data.csv}
 "data_polite"
