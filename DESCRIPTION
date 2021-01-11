@@ -23,7 +23,9 @@ Imports:
     coda,
     parallel,
     HDInterval,
-    tidyverse
+    tidyverse,
+    extraDistr,
+    mvtnorm
 RoxygenNote: 7.1.1
 Depends: 
     R (>= 2.10)
