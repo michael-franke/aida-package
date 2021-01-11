@@ -11,6 +11,8 @@ remotes::install_github("michael-franke/aida-package")
 
 ### changelog
 
+- `0.3.3`:
+    - add convenience functions for posterior sampling (Gaussian inference & regression)
 - `0.3.2`:
     - add more data sets
 - `0.3.1`: 
