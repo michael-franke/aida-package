@@ -17,6 +17,9 @@ get_samples_regression_noninformative <- function(
   n_samples = 1000
 )
 {
+  if(is.null(colnames(X))) {
+    stop("Design matrix X must have meaningful column names for coefficients.")
+  }
   n <- length(y)
   k <- ncol(X)
   
@@ -39,13 +42,11 @@ get_samples_regression_noninformative <- function(
   samples_posterior <- map_df(
     seq(n_samples), 
     function(i) {
-      s <-  mvtnorm::rmvnorm(1, beta_hat, V_beta * samples_sigma_squared[i]) 
-      tibble(
-        intercept = s[1],
-        slope     = s[2],
-        sigma     = samples_sigma_squared[i] %>% sqrt()
-      )
+      s <-  mvtnorm::rmvnorm(1, beta_hat, V_beta * samples_sigma_squared[i])
+      colnames(s) = colnames(X)
+      as_tibble(s) %>% 
+        mutate(sigma = samples_sigma_squared[i] %>% sqrt())
     }
-  )  
+  ) 
   return(samples_posterior)
 }
