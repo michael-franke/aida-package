@@ -39,7 +39,7 @@ get_samples_regression_noninformative <- function(
   )
   
   # sample full joint posterior triples
-  samples_posterior <- map_df(
+  samples_posterior <- purrr::map_df(
     seq(n_samples), 
     function(i) {
       s <-  mvtnorm::rmvnorm(1, beta_hat, V_beta * samples_sigma_squared[i])
