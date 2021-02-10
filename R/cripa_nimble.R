@@ -15,7 +15,6 @@
 #' 
 #' @import nimble
 #' @return list
-#' @export
 
 cripa_nimble <- function(seed, model_code, constants, data, inits, monitors, nburnin = 0, thin = 1, niter = 100000, nchains = 4) {
     message("building and compiling model ...")

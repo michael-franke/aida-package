@@ -14,7 +14,6 @@
 #' @param nchains number of chains
 #' 
 #' @return mcmc.list
-#' @export
 
 crs_nimble <- function(model_code, constants, data, inits, monitors = c(), nburnin = 0, thin = 1, niter = 100000, nchains = 4) {
     message("building and compiling model ...")

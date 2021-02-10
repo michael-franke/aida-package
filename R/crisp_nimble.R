@@ -19,7 +19,6 @@
 #' @param nclusters number of clusters
 #' 
 #' @return mcmc.list
-#' @export
 
 crisp_nimble <- function(model_code, constants, data, inits, monitors = c(), nburnin = 0, thin = 1,
                         niter = 100000, nchains = 4, nclusters = 4) {
