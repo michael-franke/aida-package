@@ -11,6 +11,8 @@ remotes::install_github("michael-franke/aida-package")
 
 ### changelog
 
+- `0.4`:
+    - remove `nimble` dependency (and respective functions)
 - `0.3.4`:
     - extend Bayesian sampling function to k>2
 - `0.3.3`:
