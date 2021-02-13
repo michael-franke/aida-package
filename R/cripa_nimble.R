@@ -13,7 +13,6 @@
 #' @param niter number of iterations
 #' @param nchains number of chains
 #' 
-#' @import nimble
 #' @return list
 
 cripa_nimble <- function(seed, model_code, constants, data, inits, monitors, nburnin = 0, thin = 1, niter = 100000, nchains = 4) {
