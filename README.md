@@ -11,6 +11,8 @@ remotes::install_github("michael-franke/aida-package")
 
 ### changelog
 
+- `0.4.2`:
+    - add functions `get_cell_definitions()`, `extract_draws()`, `compare_groups()` 
 - `0.4.1`:
     - bugfix: _properly_ remove `nimble` dependency
 - `0.4`:
