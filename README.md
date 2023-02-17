@@ -11,6 +11,9 @@ remotes::install_github("michael-franke/aida-package")
 
 ### changelog
 
+- `0.4.3`:
+    - removed functions (from 0.4.2) `get_cell_definitions()`, `extract_draws()`, `compare_groups()` (use `faintr` package instead)
+    - added Mental Chronometry data
 - `0.4.2`:
     - add functions `get_cell_definitions()`, `extract_draws()`, `compare_groups()` 
 - `0.4.1`:
